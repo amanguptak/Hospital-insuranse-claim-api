@@ -6,7 +6,7 @@ const claimRoute= require('./routes/claimRoute');
 const app = express();
 app.use(bodyParser.json());
 app.use('/api',claimRoute);
-const DB_URI= "mongodb+srv://Amangupta:aman123@amangupta-cluster.abvml.mongodb.net/?retryWrites=true&w=majority";
+const DB_URI= "mongodb+srv://Amangupta:password-cluster.abvml.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(DB_URI);
 mongoose.connection.once('open',()=>{
